@@ -31,8 +31,9 @@
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
 	<gap:plugin spec="https://github.com/EddyVerbruggen/cordova-plugin-googleplus.git" source="git">
-		<param name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.789178641456-n31d4btn2aea9oql0vcnt3b9b7mtkmff" />
+		<param name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.789178641456-9di7830nir87f1retqgn4lec6d7bvnuf" />
 	</gap:plugin>
+
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />

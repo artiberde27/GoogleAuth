@@ -45,7 +45,7 @@ var app = {
 	
 		window.plugins.googleplus.login({
 			'scopes': 'profile email',
-			'webClientId': '789178641456-n31d4btn2aea9oql0vcnt3b9b7mtkmff.apps.googleusercontent.com'
+			'webClientId': '789178641456-9di7830nir87f1retqgn4lec6d7bvnuf.apps.googleusercontent.com'
 			},
 			function (obj) {
 			alert('response');
