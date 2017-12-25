@@ -42,21 +42,7 @@ var app = {
 		{
 			alert("false");
 		}
-		window.plugins.googleplus.trySilentLogin(
-			{
-			 
-			  'webClientId': '789178641456-n31d4btn2aea9oql0vcnt3b9b7mtkmff.apps.googleusercontent.com', // optional - clientId of your Web application from Credentials settings of your project - On Android, this MUST be included to get an idToken. On iOS, it is not required.
-			  'offline': true, // Optional, but requires the webClientId - if set to true the plugin will also return a serverAuthCode, which can be used to grant offline access to a non-Google server
-			},
-			function (obj) {
-			  alert(JSON.stringify(obj)); // do something useful instead of alerting
-			  console.log(JSON.stringify(obj))
-			},
-			function (msg) {
-			  alert('error: ' + msg);
-			}
-		);
-		
+	
 		window.plugins.googleplus.login({
 			'scopes': 'profile email',
 			'webClientId': '789178641456-n31d4btn2aea9oql0vcnt3b9b7mtkmff.apps.googleusercontent.com'
