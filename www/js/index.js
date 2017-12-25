@@ -56,6 +56,24 @@ var app = {
 			  alert('error: ' + msg);
 			}
 		);
+		
+		window.plugins.googleplus.login({
+			'scopes': 'profile email',
+			'webClientId': '789178641456-n31d4btn2aea9oql0vcnt3b9b7mtkmff.apps.googleusercontent.com'
+			},
+			function (obj) {
+			alert('response');
+			alert(JSON.stringify(obj)); // do something useful instead of alerting
+			/* GoogleName = googleUser.getBasicProfile().getName();
+			GoogleId = googleUser.getBasicProfile().getId();
+			ImgUser = googleUser.getBasicProfile().getImageUrl()+'?sz=250';
+			GoogleEmail = googleUser.getBasicProfile().getEmail();
+			SignInDirect('google'); */
+			},function (msg) {
+			alert('error');
+			alert(JSON.stringify(msg));
+			}
+			);
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
